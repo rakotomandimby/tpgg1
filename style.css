@@ -46,9 +46,6 @@ input[type]:hover {
 input[value='='] {
     height: 124px;
 }
-input[value='0'] {
-    width: 124px;
-}
 
 
 #container div {
