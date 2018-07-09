@@ -60,3 +60,15 @@ input[value='0'] {
     width: 100%;
     height: 30px;
 }
+
+#name {
+    color: #070707;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
