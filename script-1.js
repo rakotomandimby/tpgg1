@@ -7,8 +7,9 @@ var chiffres = document.getElementsByClassName('chiffre');
 for (var i = 0; i < chiffres.length; i++) {
     var chiffre = chiffres[i]
     var click_num = function () {
-        if (document.getElementById('zone_text').value == 'NaN') {
-            document.getElementById('zone_text').value = this.value
+        if (document.getElementById('zone_text').value == 'NaN' || val == 'egal') {
+            document.getElementById('zone_text').value = this.value;
+            val ='';
         } else {
             document.getElementById('zone_text').value = document.getElementById('zone_text').value + this.value;
         }
@@ -99,6 +100,32 @@ var divide = function () {
     }   
 }
 division.addEventListener('click', divide)
+
+var plusoumoins = document.getElementById('plusoumoins');
+var plus_moins = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = -parseFloat(document.getElementById('zone_text').value);
+    }   
+}
+plusoumoins.addEventListener('click', plus_moins)
+
+var carre = document.getElementById('carre');
+var puissance_2 = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = parseFloat(document.getElementById('zone_text').value * document.getElementById('zone_text').value);
+    }
+    val = 'egal'
+}
+carre.addEventListener('click', puissance_2)
+
+var racine = document.getElementById('racine');
+var racine_carre = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.sqrt(parseFloat(document.getElementById('zone_text').value));
+    }
+    val = 'egal'
+}
+racine.addEventListener('click', racine_carre)
 
 var egal = document.getElementById('egal');
 var show = function () {
