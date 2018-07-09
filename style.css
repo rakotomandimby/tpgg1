@@ -22,7 +22,10 @@ h1::after {
     left: 50%;
     transform: translate(-50%, -50%)
 }
-td {
+
+#zone_text {
+    color: inherit;
+    background-color: inherit;
 }
 
 input[type] {
