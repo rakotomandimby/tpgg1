@@ -127,6 +127,33 @@ var racine_carre = function () {
 }
 racine.addEventListener('click', racine_carre)
 
+var cos = document.getElementById('cos');
+var cosinus = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.cos((parseFloat(document.getElementById('zone_text').value)) * Math.PI / 180);
+    }
+    val = 'egal'
+}
+cos.addEventListener('click', cosinus)
+
+var sin = document.getElementById('sin');
+var sinus = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.sin((parseFloat(document.getElementById('zone_text').value)) * Math.PI / 180);
+    }
+    val = 'egal'
+}
+sin.addEventListener('click', sinus)
+
+var tan = document.getElementById('tan');
+var tangente = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.tan((parseFloat(document.getElementById('zone_text').value)) * Math.PI / 180);
+    }
+    val = 'egal'
+}
+tan.addEventListener('click', tangente)
+
 var egal = document.getElementById('egal');
 var show = function () {
     if (val == 'egal') {
