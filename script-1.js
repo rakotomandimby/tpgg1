@@ -154,6 +154,42 @@ var tangente = function () {
 }
 tan.addEventListener('click', tangente)
 
+var log = document.getElementById('log');
+var log_dix = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.log10(parseFloat(document.getElementById('zone_text').value));
+    }
+    val = 'egal'
+}
+log.addEventListener('click', log_dix)
+
+var ln = document.getElementById('ln');
+var log_deux = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.log2(parseFloat(document.getElementById('zone_text').value));
+    }
+    val = 'egal'
+}
+ln.addEventListener('click', log_deux)
+
+var exp = document.getElementById('exp');
+var exponentielle = function () {
+    if (document.getElementById('zone_text').value != 'NaN' && document.getElementById('zone_text').value != '') {
+        document.getElementById('zone_text').value = Math.exp(parseFloat(document.getElementById('zone_text').value));
+    }
+    val = 'egal'
+}
+exp.addEventListener('click', exponentielle)
+
+var pi = document.getElementById('pi');
+var val_pi = function () {
+    if (document.getElementById('zone_text').value == '') {
+        document.getElementById('zone_text').value = Math.PI;
+    }
+    val = 'egal'
+}
+pi.addEventListener('click', val_pi)
+
 var egal = document.getElementById('egal');
 var show = function () {
     if (val == 'egal') {

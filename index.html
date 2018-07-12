@@ -7,44 +7,54 @@
     <div id="container">
       <script src="script-0.js"></script> 
       <h1>ESTI</h1>
-      <div><form name="ecran"><input id='zone_text' type="text"></input></form></div>
+      <div><form name="ecran"><input id='zone_text' readonly type="text"></input></form></div>
       <table>
         <form name="calc">
           <tr>
             <td><input type="button" value="cos" id="cos"></td>
             <td><input type="button" value="sin" id="sin"></td>  
             <td><input type="button" value="tan" id="tan"></td>                             
-             <td><input type="button" value="C" id="C"></td>
+            <td><input type="button" value="⌫" id="C"></td>
             <td><input type="button" value="CE" id="CE"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="log" id="log"></td>
+            <td><input type="button" value="ln" id="ln"></td>  
+            <td><input type="button" value="e^x" id="exp"></td>
+            <td><input type="button" value="√" id="racine"></td>                       
+            <td><input type="button" value="x²" id="carre"></td>            
           </tr>
           <tr>
             <td><input type="button" value="7" class="chiffre"></td>
             <td><input type="button" value="8" class="chiffre"></td>
             <td><input type="button" value="9" class="chiffre"></td>
-            <td><input type="button" value="+" id="plus"></td>            
-            <td><input type="button" value="x²" id="carre"></td>            
+            <td><input type="button" value="+" id="plus"></td>   
+            <td><input type="button" value="-" id="moins"></td>
+         
           </tr>
           
           <tr>
             <td><input type="button" value="4" class="chiffre"></td>
             <td><input type="button" value="5" class="chiffre"></td>
             <td><input type="button" value="6" class="chiffre"></td>
-            <td><input type="button" value="-" id="moins"></td>
-            <td><input type="button" value="√" id="racine"></td>
+            <td><input type="button" value="×" id="fois"></td>     
+            <td><input type="button" value="÷" id="division"></td>            
+                   
+
           </tr>
           
           <tr>
             <td><input type="button" value="1" class="chiffre"></td>
             <td><input type="button" value="2" class="chiffre"></td>
             <td><input type="button" value="3" class="chiffre"></td>
-            <td><input type="button" value="*" id="fois"></td>            
+            <td><input type="button" value="π" id="pi"></td>
             <td rowspan="2"><input type="button" value="=" onClick="" id="egal"></td>            
           </tr>
           <tr>
-            <td><input type="button" value="±" id="plusoumoins"></td>            
-            <td><input type="button" value="0"  class="chiffre"></td>   
+            <td colspan="2"><input type="button" value="0"  class="chiffre"></td>   
             <td><input type="button" value="." id="dot"></td>
-            <td><input type="button" value="/" id="division"></td>            
+            <td><input type="button" value="±" id="plusoumoins"></td>            
+
           </tr>
         </form>
       </table>
